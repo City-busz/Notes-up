@@ -27,7 +27,8 @@ public static int main (string[] args) {
     Intl.setlocale (LocaleCategory.ALL, Intl.get_language_names ()[0]);
 
     Environment.set_application_name (APP_NAME);
-    Environment.set_prgname (APP_NAME);
+    Environment.set_prgname ("com.github.philip_scott.notes-up");
+    Gtk.Window.set_default_icon_name ("com.github.philip_scott.notes-up");
 
     var application = new ENotes.Application ();
 
