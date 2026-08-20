@@ -447,7 +447,7 @@ public class ENotes.Headerbar : Gtk.HeaderBar {
         } else if (notebook_title != null) {
             this.title = notebook_title;
         } else {
-            this.title = "";
+            this.title = null;
         }
 
         this.title = this.title.replace ("&amp;", "&");
