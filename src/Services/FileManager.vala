@@ -48,7 +48,7 @@ public class ENotes.FileManager : Object {
 
         var op = new WebKit.PrintOperation (ENotes.ViewEditStack.get_instance ().viewer);
         var settings = new Gtk.PrintSettings ();
-        settings.set_printer (_("Print to File"));
+        settings.set_printer (dgettext ("gtk30", "Print to File"));
 
         settings[Gtk.PRINT_SETTINGS_OUTPUT_URI] = file.get_uri ();
         op.set_print_settings (settings);
